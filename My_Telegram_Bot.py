@@ -1,4 +1,4 @@
-!pip install adafruit_io
+pip install adafruit_io
 import os
 ADAFRUIT_IO_USERNAME = os.getenv("ADAFRUIT_IO_USERNAME") # get it from adafruit.io
 ADAFRUIT_IO_KEY = os.getenv("ADAFRUIT_IO_KEY")
@@ -8,7 +8,7 @@ new = Feed(name='telegrambot')
 result = aio.create_feed(new)
 result
 from Adafruit_IO import Data
-!pip install python-telegram-bot
+pip install python-telegram-bot
 from Adafruit_IO import Client,Data
 from telegram.ext import Updater,CommandHandler
 def on(telegrambot,update):
